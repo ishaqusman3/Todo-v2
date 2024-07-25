@@ -1,0 +1,154 @@
+/* todo.css */
+
+/* Todo lists container adjustments */
+.todo-lists {
+    margin: auto;
+    margin-top: 15px;
+    width: 90%;
+    background-color: #3b3a3a81;
+    padding: 20px;
+    text-align: left;
+    border-radius: 1rem;
+  }
+ 
+ /* Base styles (for all screens) */
+#root {
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+
+  #link-style{
+    text-decoration: none;
+    color: aliceblue;
+    cursor: text;
+    margin-left: 3%;
+  }
+  /* Button styles */
+  #delete-icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: #112031;
+    cursor: pointer;
+    
+}
+#delete-icon:hover{
+      background-color: #688ead;
+
+  }
+.delete-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 300;
+    transition: background-color 0.2s ease;
+}
+.delete-icon:hover {
+  width: 22px;
+  height: 22px;
+  border-radius: 22px;
+  transition: 0.2s;
+}
+   
+  /* Todo lists container adjustments */
+  .todo-lists {
+    margin: auto;
+    margin-top: 15px;
+    width: 90%;
+    /* background-color: #3b3a3a81; */
+    background-color: #3a053f46;
+    padding: 20px;
+    text-align: left;
+    border-radius: 1rem;
+  }
+  
+  /* List item styles */
+  ul {
+    list-style: none;
+    padding: 10px;
+  }
+  
+  li {
+    border-radius: 1rem;
+    padding: 10px;
+    margin-bottom: 4px;
+    background-color: #14141460;
+  }
+  
+  /* Delete icon size adjustment */
+  
+  
+  /* Success button style */
+  #addTask:hover {background-color: rgb(199, 8, 8);}
+  #addTask {
+    /* float: right; */
+    /* margin-top: -5rem; */
+    background-color: rgba(199, 8, 8, 0.507);
+    border-style: none;
+  }
+  .addTask {
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+    box-sizing: border-box;
+    width: 7rem;
+    background-color: #112031;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 8px;
+    text-align: center;
+    align-self: center;
+  }
+  /* .submit{
+    background-color:#cecfd1fb;
+    border-radius: 10px;
+    text-decoration: none;
+  }
+   */
+  /* #login{
+    width: 37vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: #132249a1;
+    text-decoration: none;
+    
+  } */
+  /* #login:hover{
+    background-color: #25469bfb;
+  } */
+  .addTask:hover {
+    background-color: #688ead;
+  }
+  
+  
+  /* Styles for large screens (e.g., laptops/desktops) */
+  @media screen and (min-width: 992px) {
+    .todo-lists {
+      max-width: 700px; /* Adjust as needed */
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+  /* Adjust styles for Android devices */
+  @media screen and (max-device-width: 480px) {
+    #addTask {
+      margin-left: -2rem;
+    }
+    
+  }
+  

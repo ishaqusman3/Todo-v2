@@ -1,0 +1,67 @@
+/* login.css */
+
+/* Container for the login form */
+.login-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #262e7ab4; /* Use your existing background color */
+  border-radius: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.562);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Form labels */
+.login-container label {  
+  font-weight: bold;
+  color: #EDEDED; /* Use your existing label color */
+}
+
+/* Input fields */
+.login-container input[type="email"],
+.login-container input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1rem;
+  background-color: #EDEDED;
+  border: none;
+  border-radius: 4px;
+  color: black;
+}
+
+/* Submit button */
+.login-container .submit {
+  background-color: #112031;
+  color: aliceblue;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 300;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  width: 100%;
+  padding: 7px;
+}
+
+.login-container .submit:hover {
+  background-color: #688ead;
+}
+
+/* Optional: Center the form vertically */
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Optional: Error message styling */
+.login-container .error {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Optional: Customize other styles as needed */

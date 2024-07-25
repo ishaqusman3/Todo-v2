@@ -1,0 +1,67 @@
+
+/* Modal.css */
+
+/* Keyframes for the grow animation */
+@keyframes grow {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4); /* Black overlay with opacity */
+}
+
+.modal.display-block {
+    display: block;
+}
+
+.modal-main {
+    position: relative;
+    margin: auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    background-color: white;
+    border-radius: 10px;
+    animation: grow 0.5s ease-in-out; /* Apply the grow animation */
+}
+
+.display-block {
+    display: block;
+}
+  
+.display-none {
+    display: none;
+}
+#btn{
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    width: 40%;
+    padding: 7px;
+    margin: 4% 5% 4% 5%;
+    background-color: #688ead;
+}
+#btn:hover{
+    background-color: #112031;
+
+}
+  /* Customize other styles as needed */
+  
