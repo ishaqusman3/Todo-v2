@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import api from './api.jsx';
+import api from './api.js';
 import { Link, useNavigate } from 'react-router-dom';
 import './Todolist.css';
 import { faTrashCan } from '@fortawesome/free-solid-svg-icons';
@@ -42,7 +42,9 @@ export default function TodoList() {
     }, []);
 
     const handleDelete = (id) => {
-        api.delete(`/deleteTask/${id}`)
+        api.delete(`/deleteTask/${id}`, {
+            data: { userId }
+        })
         .then(res => {
             console.log(res);
             setTasks(tasks.filter(task => task._id !== id));
